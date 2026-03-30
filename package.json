@@ -1,16 +1,40 @@
 {
-  "name": "ui",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "@kreozalabs/ui",
+  "version": "0.1.0",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.368.0",
+    "tailwind-merge": "^2.2.2"
+  },
   "devDependencies": {
-    "@kreozalabs/prettier-config": "^1.1.0"
+    "@kreozalabs/eslint-config": "1.1.0",
+    "@kreozalabs/prettier-config": "1.1.0",
+    "@kreozalabs/styles": "2.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^4.0.0",
+    "tsup": "^8.0.2",
+    "typescript": "~5.5.4"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   }
 }

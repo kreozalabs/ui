@@ -1,0 +1,8 @@
+default_language_version:
+  node: 24.14.1
+
+repos:
+  - repo: https://github.com/kreozalabs/tooling
+    rev: main
+    hooks:
+      - id: kreoza-prettier
