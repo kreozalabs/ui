@@ -5,6 +5,13 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -17,8 +24,10 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.0",
     "lucide-react": "^0.368.0",
+    "radix-ui": "^1.4.3",
     "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
@@ -26,8 +35,8 @@
     "@kreozalabs/prettier-config": "1.1.0",
     "@kreozalabs/styles": "2.0.0",
     "@tailwindcss/postcss": "^4.0.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "prettier": "^3.2.5",
     "tailwindcss": "^4.0.0",
     "tsup": "^8.0.2",

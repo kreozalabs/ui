@@ -1,7 +1,14 @@
 // The main entry point for @kreozalabs/ui
 
 // Export utility functions
-export * from "./lib/utils";
+export * from "./components/lib/utils";
 
-// Export ready-to-use React components (to be implemented)
-// export * from "./components/button"
+// Export UI components
+export * from "./components/ui/alert";
+export * from "./components/ui/button";
+export * from "./components/ui/card";
+export * from "./components/ui/dialog";
+export * from "./components/ui/dropdown-menu";
+export * from "./components/ui/input";
+export * from "./components/ui/label";
+export * from "./components/ui/badge";
