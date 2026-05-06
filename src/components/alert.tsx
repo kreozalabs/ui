@@ -1,25 +1,20 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@kreozalabs/ui/lib/utils"
 
 const alertVariants = cva(
-  "group/alert relative flex w-full flex-row items-start gap-3 rounded-xl border text-left transition-all duration-300",
+  "group/alert relative grid w-full gap-0.5 rounded-lg border px-2.5 py-2 text-left text-sm has-data-[slot=alert-action]:relative has-data-[slot=alert-action]:pr-18 has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-2 *:[svg]:row-span-2 *:[svg]:translate-y-0.5 *:[svg]:text-current *:[svg:not([class*='size-'])]:size-4",
   {
     variants: {
       variant: {
-        default: "bg-card text-card-foreground shadow-sm",
+        default: "bg-card text-card-foreground",
         destructive:
-          "bg-destructive/5 text-destructive border-destructive/20 shadow-lg shadow-destructive/5 *:data-[slot=alert-description]:text-destructive/90 *:[svg]:text-current",
-      },
-      size: {
-        default: "px-4 py-3 text-sm",
-        lg: "px-8 py-6 text-base md:text-lg shadow-xl",
+          "bg-card text-destructive *:data-[slot=alert-description]:text-destructive/90 *:[svg]:text-current",
       },
     },
     defaultVariants: {
       variant: "default",
-      size: "default",
     },
   }
 )
@@ -27,14 +22,13 @@ const alertVariants = cva(
 function Alert({
   className,
   variant,
-  size = "default",
   ...props
 }: React.ComponentProps<"div"> & VariantProps<typeof alertVariants>) {
   return (
     <div
       data-slot="alert"
       role="alert"
-      className={cn(alertVariants({ variant, size }), className)}
+      className={cn(alertVariants({ variant }), className)}
       {...props}
     />
   )
@@ -45,7 +39,7 @@ function AlertTitle({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="alert-title"
       className={cn(
-        "font-medium [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground",
+        "font-medium group-has-[>svg]/alert:col-start-2 [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground",
         className
       )}
       {...props}

@@ -145,3 +145,5 @@ vite.config.ts.timestamp-*
 
 
 .turbo
+src/index.ts
+dist

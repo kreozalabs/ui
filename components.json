@@ -13,6 +13,7 @@
     "components": "@kreozalabs/ui/components",
     "utils": "@kreozalabs/ui/lib/utils",
     "hooks": "@kreozalabs/ui/hooks",
-    "lib": "@kreozalabs/ui/lib"
+    "lib": "@kreozalabs/ui/lib",
+    "ui": "@kreozalabs/ui/components"
   }
 }
