@@ -1,7 +1,7 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { cn } from "@/components/lib/utils"
+import { cn } from "@/lib/utils"
 
 const alertVariants = cva(
   "group/alert relative flex w-full flex-row items-start gap-3 rounded-xl border text-left transition-all duration-300",

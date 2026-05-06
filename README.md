@@ -15,7 +15,7 @@ Ensure the consuming application has the following installed:
 - `react` 
 - `react-dom`
 - `tailwindcss`
-- `@kreozalabs/styles` (for the required design tokens and presets)
+- Tailwind CSS v4 (included)
 
 ## 🚀 Usage
 
@@ -34,7 +34,10 @@ export default function App() {
 ```
 
 ## 🛠️ Configuration
-Ensure your application's `tailwind.config.ts` extends the presets from `@kreozalabs/styles` so that these UI components render with the correct brand theme and colors.
+Import the styles in your main entry point:
+```css
+@import "@kreozalabs/ui/index.css";
+```
 
 ## 🤝 Contributing
 For guidelines on what belongs in this package, how to add new components, and our architectural boundaries, please carefully read the [CONTRIBUTING.md](./CONTRIBUTING.md).

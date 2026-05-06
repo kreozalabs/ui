@@ -14,7 +14,8 @@
     "declaration": true,
     "outDir": "./dist",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@kreozalabs/ui/*": ["./src/*"]
     }
   },
   "include": ["src"],

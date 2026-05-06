@@ -1,17 +1,17 @@
 // The main entry point for @kreozalabs/ui
 
 // Export utility functions
-export * from "./components/lib/utils";
+export * from "./lib/utils";
 
 // Export UI components
-export * from "./components/ui/alert";
-export * from "./components/ui/button";
-export * from "./components/ui/card";
-export * from "./components/ui/dialog";
-export * from "./components/ui/dropdown-menu";
-export * from "./components/ui/input";
-export * from "./components/ui/label";
-export * from "./components/ui/badge";
-export * from "./components/ui/sheet";
-export * from "./components/ui/textarea";
-export * from "./components/ui/select";
+export * from "./components/alert";
+export * from "./components/button";
+export * from "./components/card";
+export * from "./components/dialog";
+export * from "./components/dropdown-menu";
+export * from "./components/input";
+export * from "./components/label";
+export * from "./components/badge";
+export * from "./components/sheet";
+export * from "./components/textarea";
+export * from "./components/select";
