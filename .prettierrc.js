@@ -1,1 +1,5 @@
-module.exports = require("@kreozalabs/prettier-config");
+import labsConfig from "@kreozalabs/prettier-config";
+
+export default {
+  ...labsConfig,
+};

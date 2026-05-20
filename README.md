@@ -11,8 +11,10 @@ pnpm add @kreozalabs/ui
 ```
 
 ### Peer Dependencies
+
 Ensure the consuming application has the following installed:
-- `react` 
+
+- `react`
 - `react-dom`
 - `tailwindcss`
 - Tailwind CSS v4 (included)
@@ -34,10 +36,13 @@ export default function App() {
 ```
 
 ## 🛠️ Configuration
+
 Import the styles in your main entry point:
+
 ```css
 @import "@kreozalabs/ui/index.css";
 ```
 
 ## 🤝 Contributing
+
 For guidelines on what belongs in this package, how to add new components, and our architectural boundaries, please carefully read the [CONTRIBUTING.md](./CONTRIBUTING.md).
